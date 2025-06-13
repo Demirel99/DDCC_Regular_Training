@@ -109,7 +109,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_interval', type=int, default=10, help='Save checkpoint and samples every N epochs.')
     # --- (NEW) Arguments for Focal Loss ---
     parser.add_argument('--gamma', type=float, default=2.0, help='Focal loss focusing parameter (gamma).')
-    parser.add_argument('--alpha', type=float, default=0.7, help='Focal loss alpha parameter (weight for the positive class).')
+    parser.add_argument('--alpha', type=float, default=0.95, help='Focal loss alpha parameter (weight for the positive class).')
     args = parser.parse_args()
     
     train(args)
